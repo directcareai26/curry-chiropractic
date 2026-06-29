@@ -267,6 +267,9 @@ h1, h2, h3 { font-family: var(--font); line-height: 1.12; letter-spacing: -0.02e
 .footer__links a:hover { color: var(--red); }
 .footer__bottom { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-top: 24px; font-size: .88rem; }
 .footer__bottom a:hover { color: #fff; }
+.footer__dot { color: #444; margin: 0 4px; }
+.footer__admin { color: #777; font-family: var(--font); font-weight: 600; }
+.footer__admin:hover { color: var(--red); }
 
 /* ---------- Floating call ---------- */
 .float-call {
