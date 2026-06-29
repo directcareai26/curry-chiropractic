@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Forms | Curry Chiropractic — Windsor, CT</title>
+  <meta name="description" content="Complete your Curry Chiropractic new patient forms online — New Patient Health History and Medical Release. Fill out from home, then print or bring to your appointment." />
+  <meta name="theme-color" content="#000000" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="pages.css" />
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span class="topbar__item">📍 15 Central Street, Windsor, CT 06095</span>
+      <span class="topbar__sep">•</span>
+      <a class="topbar__item" href="tel:+18606881218">📞 (860) 688-1218</a>
+      <span class="topbar__hours">Complete forms from home</span>
+    </div>
+  </div>
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__brand" aria-label="Curry Chiropractic home">
+        <img src="assets/logo.png" alt="Curry Chiropractic logo" class="nav__logo" />
+        <span class="nav__brand-text">Curry<strong>Chiropractic</strong></span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="index.html#services">Services</a>
+        <a href="new-patient-center.html">New Patients</a>
+        <a href="events.html">Events</a>
+        <a href="curry-classic.html">Curry Classic</a>
+        <a href="index.html#reviews">Reviews</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="tel:+18606881218" class="btn btn--primary nav__cta">Call Now</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="pagehero">
+    <div class="container pagehero__inner">
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><a href="new-patient-center.html">New Patients</a><span>/</span>Online Forms</div>
+      <h1>Online Forms</h1>
+      <p>We offer our patient forms online so they can be completed in the convenience of your own home or office. Fill them out below, then print and bring them in — or save a copy for your records.</p>
+      <div class="pagehero__bar"></div>
+    </div>
+  </section>
+
+  <section class="pagebody">
+    <div class="container">
+
+      <div class="formsuccess" id="formSuccess">
+        ✓ Thank you! Your form is ready. Please use the <strong>Print / Save as PDF</strong> button and bring it to your appointment, or call us at (860) 688-1218.
+      </div>
+
+      <div class="formwrap">
+        <div>
+          <!-- New Patient Health History Form -->
+          <form class="formcard" id="healthForm" onsubmit="return handleSubmit(event)">
+            <h2>New Patient Health History Form <span class="required">*Required</span></h2>
+            <p>This lets us know the history and current state of your health. What questions, concerns, or goals regarding wellness can we help you with?</p>
+
+            <fieldset class="fieldset">
+              <legend>Patient Information</legend>
+              <div class="frow">
+                <div class="field"><label>First Name <span class="required">*</span></label><input type="text" name="first_name" required /></div>
+                <div class="field"><label>Last Name <span class="required">*</span></label><input type="text" name="last_name" required /></div>
+              </div>
+              <div class="frow">
+                <div class="field"><label>Date of Birth</label><input type="date" name="dob" /></div>
+                <div class="field"><label>Today's Date</label><input type="date" name="date_today" /></div>
+              </div>
+              <div class="frow">
+                <div class="field"><label>Phone <span class="required">*</span></label><input type="tel" name="phone" required placeholder="(860) 000-0000" /></div>
+                <div class="field"><label>Email</label><input type="email" name="email" placeholder="you@email.com" /></div>
+              </div>
+              <div class="frow frow--full">
+                <div class="field"><label>Street Address</label><input type="text" name="address" /></div>
+              </div>
+              <div class="frow frow--3">
+                <div class="field"><label>City</label><input type="text" name="city" value="" /></div>
+                <div class="field"><label>State</label><input type="text" name="state" value="CT" /></div>
+                <div class="field"><label>ZIP</label><input type="text" name="zip" /></div>
+              </div>
+            </fieldset>
+
+            <fieldset class="fieldset">
+              <legend>Reason for Visit</legend>
+              <div class="frow frow--full">
+                <div class="field"><label>What is your main health concern today?</label><textarea name="concern" placeholder="Describe your symptoms, pain, or reason for visiting…"></textarea></div>
+              </div>
+              <div class="frow">
+                <div class="field"><label>When did it start?</label><input type="text" name="onset" placeholder="e.g. 3 weeks ago, after a car accident…" /></div>
+                <div class="field"><label>Pain level (0–10)</label><select name="pain">
+                  <option value="">Select…</option>
+                  <option>0 – None</option><option>1</option><option>2</option><option>3</option><option>4</option>
+                  <option>5 – Moderate</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10 – Severe</option>
+                </select></div>
+              </div>
+              <div class="field" style="margin-bottom:8px"><label>Where are you experiencing symptoms? (check all that apply)</label></div>
+              <div class="checks">
+                <label class="check"><input type="checkbox" name="area" value="Neck" /> Neck</label>
+                <label class="check"><input type="checkbox" name="area" value="Upper back" /> Upper back</label>
+                <label class="check"><input type="checkbox" name="area" value="Lower back" /> Lower back</label>
+                <label class="check"><input type="checkbox" name="area" value="Headaches" /> Headaches</label>
+                <label class="check"><input type="checkbox" name="area" value="Shoulder" /> Shoulder</label>
+                <label class="check"><input type="checkbox" name="area" value="Hip / leg" /> Hip / leg</label>
+                <label class="check"><input type="checkbox" name="area" value="Arm / hand" /> Arm / hand</label>
+                <label class="check"><input type="checkbox" name="area" value="Other" /> Other</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="fieldset">
+              <legend>Health History</legend>
+              <div class="frow frow--full">
+                <div class="field"><label>Current medications</label><textarea name="medications" placeholder="List any medications you are currently taking…"></textarea></div>
+              </div>
+              <div class="frow frow--full">
+                <div class="field"><label>Past surgeries, injuries, or major conditions</label><textarea name="history" placeholder="Briefly describe…"></textarea></div>
+              </div>
+              <div class="frow">
+                <div class="field"><label>Have you seen a chiropractor before?</label><select name="prior_chiro"><option value="">Select…</option><option>Yes</option><option>No</option></select></div>
+                <div class="field"><label>Is this related to an accident?</label><select name="accident"><option value="">Select…</option><option>No</option><option>Auto accident</option><option>Work injury</option><option>Other injury</option></select></div>
+              </div>
+            </fieldset>
+
+            <fieldset class="fieldset">
+              <legend>Goals &amp; Consent</legend>
+              <div class="frow frow--full">
+                <div class="field"><label>What are your wellness goals?</label><textarea name="goals" placeholder="What would feeling your best look like for you?"></textarea></div>
+              </div>
+              <label class="check" style="margin-top:6px"><input type="checkbox" name="consent" required /> I confirm the information above is accurate to the best of my knowledge. <span class="required">*</span></label>
+            </fieldset>
+
+            <div class="form__actions">
+              <button type="submit" class="btn btn--primary btn--lg">✓ Complete Form</button>
+              <button type="button" class="btn btn--ghost btn--lg" onclick="window.print()">🖨️ Print / Save as PDF</button>
+            </div>
+            <p class="form__note">Prefer paper? Use Print / Save as PDF to fill it out by hand, then fax it to us or bring it to your appointment. Your information is not transmitted until you choose to submit it to our office.</p>
+          </form>
+
+          <!-- Medical Release Form -->
+          <form class="formcard" id="releaseForm" style="margin-top:32px" onsubmit="return handleSubmit(event)">
+            <h2>Medical Release Form</h2>
+            <p>Authorize Curry Chiropractic to request or release medical records related to your care.</p>
+            <fieldset class="fieldset">
+              <legend>Authorization</legend>
+              <div class="frow">
+                <div class="field"><label>Patient Name</label><input type="text" name="rel_name" /></div>
+                <div class="field"><label>Date of Birth</label><input type="date" name="rel_dob" /></div>
+              </div>
+              <div class="frow frow--full">
+                <div class="field"><label>Release records to / from (provider name &amp; address)</label><textarea name="rel_provider"></textarea></div>
+              </div>
+              <div class="frow frow--full">
+                <div class="field"><label>Information to be released</label><input type="text" name="rel_info" placeholder="e.g. X-rays, exam notes, treatment history" /></div>
+              </div>
+              <label class="check"><input type="checkbox" name="rel_consent" /> I authorize the release of the information described above.</label>
+            </fieldset>
+            <div class="form__actions">
+              <button type="submit" class="btn btn--primary btn--lg">✓ Complete Form</button>
+              <button type="button" class="btn btn--ghost btn--lg" onclick="window.print()">🖨️ Print / Save as PDF</button>
+            </div>
+          </form>
+        </div>
+
+        <aside class="formside">
+          <div class="sidecard">
+            <h3>How it works</h3>
+            <ul>
+              <li>Fill out the form online below</li>
+              <li>Print it or save it as a PDF</li>
+              <li>Fax it to us or bring it to your visit</li>
+            </ul>
+            <a href="tel:+18606881218" class="btn btn--primary">📞 (860) 688-1218</a>
+          </div>
+          <div class="sidecard" style="background:#fff;color:var(--ink);border:1px solid var(--line)">
+            <h3 style="color:var(--ink)">Visit us</h3>
+            <p style="color:var(--gray);font-size:.95rem;margin-bottom:14px">15 Central Street<br>Windsor, CT 06095</p>
+            <a href="https://maps.google.com/?q=15+Central+Street+Windsor+CT+06095" target="_blank" rel="noopener" class="btn btn--ghost">📍 Get directions</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="assets/logo.png" alt="Curry Chiropractic" class="footer__logo" />
+        <p>Family-owned chiropractic care for the Windsor, CT community. Chiropractic care for everyone.</p>
+      </div>
+      <div class="footer__links">
+        <a href="index.html#services">Services</a>
+        <a href="new-patient-center.html">New Patients</a>
+        <a href="forms.html">Online Forms</a>
+        <a href="events.html">Events</a>
+        <a href="curry-classic.html">Curry Classic</a>
+        <a href="payment-options.html">Payment Options</a>
+        <a href="index.html#reviews">Reviews</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> Curry Chiropractic · 15 Central Street, Windsor, CT 06095</span>
+      <span><a href="tel:+18606881218">(860) 688-1218</a></span>
+    </div>
+  </footer>
+
+  <a href="tel:+18606881218" class="float-call" aria-label="Call Curry Chiropractic">📞</a>
+  <script src="script.js"></script>
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      var msg = document.getElementById('formSuccess');
+      msg.classList.add('show');
+      msg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      return false;
+    }
+  </script>
+</body>
+</html>
