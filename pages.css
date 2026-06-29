@@ -10,8 +10,8 @@
 .pagehero::before {
   content: ""; position: absolute; inset: 0;
   background:
-    radial-gradient(circle at 85% 10%, rgba(209,25,32,.22), transparent 45%),
-    radial-gradient(circle at 5% 95%, rgba(209,25,32,.10), transparent 40%);
+    radial-gradient(circle at 85% 10%, rgba(23,97,216,.22), transparent 45%),
+    radial-gradient(circle at 5% 95%, rgba(23,97,216,.10), transparent 40%);
 }
 .pagehero__inner { position: relative; z-index: 1; }
 .breadcrumb { font-size: .88rem; color: #9a9a9a; font-family: var(--font); font-weight: 600; margin-bottom: 16px; }
@@ -47,7 +47,7 @@
 /* ---------- Info / callout ---------- */
 .callout {
   display: flex; gap: 16px; align-items: flex-start;
-  background: var(--red-soft); border: 1px solid #f4d3d4; border-left: 4px solid var(--red);
+  background: var(--red-soft); border: 1px solid #cfe0f7; border-left: 4px solid var(--red);
   border-radius: var(--radius-sm); padding: 22px 24px; margin: 28px 0;
 }
 .callout__icon { font-size: 1.4rem; }
@@ -137,10 +137,10 @@
 .gallery__item .yr { color: var(--red); font-size: .8rem; letter-spacing: .06em; margin-top: 6px; }
 
 /* ---------- Curry Classic ---------- */
-.classic-hero { background: linear-gradient(135deg, #0a0a0a 0%, #1a0608 100%); }
+.classic-hero { background: linear-gradient(135deg, #0a0a0a 0%, #06101f 100%); }
 .classic-badge {
-  display: inline-flex; align-items: center; gap: 8px; background: rgba(209,25,32,.16);
-  border: 1px solid rgba(209,25,32,.4); color: #ff6e74; border-radius: 999px;
+  display: inline-flex; align-items: center; gap: 8px; background: rgba(23,97,216,.16);
+  border: 1px solid rgba(23,97,216,.4); color: #6fa8ff; border-radius: 999px;
   padding: 7px 16px; font-family: var(--font); font-weight: 700; font-size: .82rem;
   letter-spacing: .05em; text-transform: uppercase; margin-bottom: 18px;
 }
@@ -171,7 +171,7 @@
 .tier--feature { background: var(--black); color: #fff; border-color: var(--black); position: relative; }
 .tier--feature::before { content: "Most Popular"; position: absolute; top: 16px; right: 16px; background: var(--red); color: #fff; font-family: var(--font); font-weight: 700; font-size: .72rem; padding: 4px 12px; border-radius: 999px; text-transform: uppercase; letter-spacing: .04em; }
 .tier__name { font-family: var(--font); font-weight: 700; font-size: 1rem; color: var(--red); text-transform: uppercase; letter-spacing: .04em; }
-.tier--feature .tier__name { color: #ff6e74; }
+.tier--feature .tier__name { color: #6fa8ff; }
 .tier__price { font-family: var(--font); font-weight: 800; font-size: 2.4rem; line-height: 1; }
 .tier__price span { font-size: 1rem; color: var(--gray); font-weight: 600; }
 .tier--feature .tier__price span { color: #aaa; }

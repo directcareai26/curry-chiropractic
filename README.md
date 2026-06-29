@@ -3,7 +3,7 @@
 Modern 2025 rebuild of the Curry Chiropractic website (Windsor, Connecticut). Static site, no build step.
 
 - **Stack:** plain HTML + CSS + vanilla JS (zero dependencies)
-- **Brand:** black + white + red, matched from the original circular logo
+- **Brand:** black + white + blue accent (original circular logo retained)
 - **Content:** services, first-visit process, three phases of care, the Curry doctors, patient testimonials, hours & location
 
 ## Business
