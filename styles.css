@@ -369,9 +369,14 @@ html.a11y-cursor, html.a11y-cursor * {
     position: fixed; top: 74px; left: 0; right: 0;
     flex-direction: column; align-items: stretch; gap: 0;
     background: #fff; border-bottom: 1px solid var(--line);
-    padding: 12px 24px 22px; transform: translateY(-130%); transition: transform .35s ease; box-shadow: var(--shadow);
+    padding: 12px 24px 22px;
+    transform: translateY(calc(-100% - 90px));
+    visibility: hidden;
+    transition: transform .35s ease, visibility .35s ease;
+    box-shadow: var(--shadow);
+    max-height: calc(100vh - 74px); overflow-y: auto;
   }
-  .nav__links.open { transform: translateY(0); }
+  .nav__links.open { transform: translateY(0); visibility: visible; }
   .nav__links a { padding: 14px 0; border-bottom: 1px solid var(--line); }
   .nav__cta { margin-top: 12px; border-bottom: none !important; text-align: center; }
   .nav__toggle { display: flex; }
@@ -384,4 +389,7 @@ html.a11y-cursor, html.a11y-cursor * {
   .topbar__inner { font-size: .76rem; }
   .topbar__hours { display: none; }
   .hero { padding: 56px 0 70px; }
+  /* keep footer text clear of the floating call / accessibility buttons */
+  .footer { padding-bottom: 120px; }
+  .footer__bottom { flex-direction: column; gap: 8px; }
 }

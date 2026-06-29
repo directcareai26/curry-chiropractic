@@ -181,6 +181,8 @@
 .tier--feature .tier__list li { color: #cfcfcf; }
 .tier .btn { margin-top: auto; }
 
+.cc-split { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 50px; }
+
 .benefit-band {
   background: var(--red-soft); border-radius: var(--radius); padding: 30px 34px;
   display: flex; gap: 20px; align-items: center; flex-wrap: wrap; margin-top: 30px;
@@ -249,6 +251,9 @@
   .articles { grid-template-columns: 1fr 1fr; }
   .signup { grid-template-columns: 1fr; }
   .signup input { min-width: 0; flex: 1; }
+}
+@media (max-width: 760px) {
+  .cc-split { grid-template-columns: 1fr; gap: 34px; margin-top: 36px; }
 }
 @media (max-width: 620px) {
   .svc { grid-template-columns: 1fr; gap: 14px; }
