@@ -194,6 +194,48 @@
 .lhead h2 { font-size: clamp(1.7rem, 3vw, 2.3rem); }
 .lhead p { color: var(--gray); font-size: 1.08rem; margin-top: 8px; max-width: 640px; }
 
+/* ---------- Services & Techniques (detail rows) ---------- */
+.svc { display: grid; grid-template-columns: 66px 1fr; gap: 24px; padding: 32px 0; border-bottom: 1px solid var(--line); align-items: start; }
+.svc:last-child { border-bottom: none; }
+.svc__icon { width: 66px; height: 66px; border-radius: 16px; background: var(--red-soft); display: grid; place-items: center; font-size: 1.8rem; }
+.svc__tag { display: inline-block; font-family: var(--font); font-weight: 700; font-size: .72rem; text-transform: uppercase; letter-spacing: .05em; color: var(--red); background: var(--red-soft); padding: 4px 11px; border-radius: 999px; margin-bottom: 9px; }
+.svc__body h3 { font-size: 1.4rem; margin-bottom: 8px; }
+.svc__body p { color: var(--gray); }
+
+/* ---------- Resource link groups ---------- */
+.reslist { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 8px; }
+.resgroup { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 30px; }
+.resgroup h3 { font-size: 1.25rem; display: flex; align-items: center; gap: 10px; }
+.resgroup .resgroup__sub { color: var(--gray); font-size: .92rem; margin: 4px 0 16px; }
+.reslinks { list-style: none; display: grid; gap: 10px; }
+.reslinks a { display: flex; align-items: center; gap: 10px; padding: 13px 16px; background: #f6f7f9; border: 1px solid var(--line); border-radius: 12px; font-family: var(--font); font-weight: 600; color: var(--ink); transition: .15s; }
+.reslinks a:hover { border-color: var(--red); color: var(--red); transform: translateX(4px); }
+.reslinks a::before { content: "🔗"; font-size: .95rem; }
+.reslinks a .ext { margin-left: auto; color: var(--gray); font-weight: 400; font-size: .95rem; }
+
+/* ---------- Embedded frame (3D spine) ---------- */
+.embed-frame { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); box-shadow: var(--shadow); background: #fff; }
+.embed-frame iframe { display: block; width: 100%; height: 700px; border: 0; }
+.embed-note { color: var(--gray); font-size: .9rem; margin-top: 16px; }
+
+/* ---------- Community content / newsletters ---------- */
+.articles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.article { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; transition: transform .25s, box-shadow .25s; }
+.article:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+.article__top { height: 116px; background: linear-gradient(135deg, var(--red), var(--red-dark)); display: grid; place-items: center; font-size: 2.4rem; }
+.article__body { padding: 24px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+.article__cat { font-family: var(--font); font-weight: 700; font-size: .72rem; text-transform: uppercase; letter-spacing: .05em; color: var(--red); }
+.article__body h3 { font-size: 1.18rem; }
+.article__body p { color: var(--gray); font-size: .95rem; flex: 1; }
+
+.signup { background: var(--black); color: #fff; border-radius: var(--radius); padding: 38px 40px; display: grid; grid-template-columns: 1fr auto; gap: 26px; align-items: center; margin-top: 38px; }
+.signup h3 { font-size: 1.5rem; color: #fff; }
+.signup p { color: #bdbdbd; margin-top: 6px; }
+.signup form { display: flex; gap: 10px; flex-wrap: wrap; }
+.signup input { padding: 14px 18px; border-radius: 999px; border: none; min-width: 250px; font-family: var(--font-body); font-size: .98rem; }
+.signup .signup__ok { display: none; color: #7ee29a; font-family: var(--font); font-weight: 600; margin-top: 10px; }
+.signup .signup__ok.show { display: block; }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .hubgrid, .tiers { grid-template-columns: 1fr; }
@@ -203,6 +245,15 @@
   .eventcard { grid-template-columns: 90px 1fr; }
   .eventcard__cta { grid-column: 1 / -1; }
   .sched { grid-template-columns: 90px 1fr; gap: 14px; }
+  .reslist { grid-template-columns: 1fr; }
+  .articles { grid-template-columns: 1fr 1fr; }
+  .signup { grid-template-columns: 1fr; }
+  .signup input { min-width: 0; flex: 1; }
+}
+@media (max-width: 620px) {
+  .svc { grid-template-columns: 1fr; gap: 14px; }
+  .articles { grid-template-columns: 1fr; }
+  .embed-frame iframe { height: 540px; }
 }
 
 /* ---------- Print (forms) ---------- */

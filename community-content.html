@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Community Content &amp; Newsletters | Curry Chiropractic — Windsor, CT</title>
+  <meta name="description" content="Health and wellness articles and newsletters from Curry Chiropractic in Windsor, CT. Tips on posture, nutrition, exercise, and living well between adjustments." />
+  <meta name="theme-color" content="#000000" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="pages.css" />
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span class="topbar__item">📍 15 Central Street, Windsor, CT 06095</span>
+      <span class="topbar__sep">•</span>
+      <a class="topbar__item" href="tel:+18606881218">📞 (860) 688-1218</a>
+      <span class="topbar__hours">Wellness tips from our family to yours</span>
+    </div>
+  </div>
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__brand" aria-label="Curry Chiropractic home">
+        <img src="assets/logo.png" alt="Curry Chiropractic logo" class="nav__logo" />
+        <span class="nav__brand-text">Curry<strong>Chiropractic</strong></span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="services-techniques.html">Services</a>
+        <a href="new-patient-center.html">New Patients</a>
+        <a href="events.html">Events</a>
+        <a href="curry-classic.html">Curry Classic</a>
+        <a href="index.html#reviews">Reviews</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="tel:+18606881218" class="btn btn--primary nav__cta">Call Now</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="pagehero">
+    <div class="container pagehero__inner">
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span>Community Content</div>
+      <h1>Community Content</h1>
+      <p>Health and wellness articles from our family to yours. Browse tips to help you feel your best between visits — and subscribe to our newsletter for the latest from the office.</p>
+      <div class="pagehero__bar"></div>
+    </div>
+  </section>
+
+  <section class="pagebody">
+    <div class="container">
+      <div class="lhead reveal"><h2>Wellness articles</h2><p>Practical, easy-to-read guidance on living well, moving better, and protecting your spine.</p></div>
+
+      <div class="articles">
+        <article class="article reveal">
+          <div class="article__top">🪑</div>
+          <div class="article__body">
+            <span class="article__cat">Posture</span>
+            <h3>Fixing "Tech Neck" at Your Desk</h3>
+            <p>Simple workstation tweaks and stretches to undo the strain of long hours at a screen.</p>
+          </div>
+        </article>
+        <article class="article reveal">
+          <div class="article__top">🏃</div>
+          <div class="article__body">
+            <span class="article__cat">Movement</span>
+            <h3>5 Daily Stretches for a Healthy Back</h3>
+            <p>A quick routine you can do at home to keep your spine mobile and pain at bay.</p>
+          </div>
+        </article>
+        <article class="article reveal">
+          <div class="article__top">🥗</div>
+          <div class="article__body">
+            <span class="article__cat">Nutrition</span>
+            <h3>Eating to Reduce Inflammation</h3>
+            <p>The everyday foods that help calm inflammation and support faster recovery.</p>
+          </div>
+        </article>
+        <article class="article reveal">
+          <div class="article__top">😴</div>
+          <div class="article__body">
+            <span class="article__cat">Sleep</span>
+            <h3>The Best Sleeping Positions for Your Spine</h3>
+            <p>How you sleep matters — set up your pillow and mattress to wake up pain-free.</p>
+          </div>
+        </article>
+        <article class="article reveal">
+          <div class="article__top">🤰</div>
+          <div class="article__body">
+            <span class="article__cat">Pregnancy</span>
+            <h3>Chiropractic Care &amp; the Webster Technique</h3>
+            <p>How gentle, Webster-certified care can ease discomfort throughout pregnancy.</p>
+          </div>
+        </article>
+        <article class="article reveal">
+          <div class="article__top">🧒</div>
+          <div class="article__body">
+            <span class="article__cat">Family</span>
+            <h3>Why Backpacks Matter for Kids' Spines</h3>
+            <p>How to pack and fit a backpack so it supports — not strains — growing bodies.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="signup reveal">
+        <div>
+          <h3>📬 Subscribe to our newsletter</h3>
+          <p>Get seasonal wellness tips, office news, and event invites in your inbox.</p>
+          <span class="signup__ok" id="signupOk">✓ You're subscribed! Watch your inbox for our next issue.</span>
+        </div>
+        <form onsubmit="return subscribe(event)">
+          <input type="email" name="email" placeholder="Your email address" required aria-label="Email address" />
+          <button type="submit" class="btn btn--primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="assets/logo.png" alt="Curry Chiropractic" class="footer__logo" />
+        <p>Family-owned chiropractic care for the Windsor, CT community. Chiropractic care for everyone.</p>
+      </div>
+      <div class="footer__links">
+        <a href="services-techniques.html">Services &amp; Techniques</a>
+        <a href="new-patient-center.html">New Patients</a>
+        <a href="forms.html">Online Forms</a>
+        <a href="payment-options.html">Payment Options</a>
+        <a href="https://simplecheckout.authorize.net/payment/CatalogPayment.aspx" target="_blank" rel="noopener">Pay My Bill</a>
+        <a href="health-resources.html">Health Resources</a>
+        <a href="3d-spine-simulator.html">3D Spine Simulator</a>
+        <a href="community-content.html">Community Content</a>
+        <a href="events.html">Events</a>
+        <a href="curry-classic.html">Curry Classic</a>
+        <a href="index.html#reviews">Reviews</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> Curry Chiropractic · 15 Central Street, Windsor, CT 06095</span>
+      <span><a href="tel:+18606881218">(860) 688-1218</a></span>
+    </div>
+  </footer>
+
+  <a href="tel:+18606881218" class="float-call" aria-label="Call Curry Chiropractic">📞</a>
+  <script src="script.js"></script>
+  <script>
+    function subscribe(e) {
+      e.preventDefault();
+      document.getElementById('signupOk').classList.add('show');
+      e.target.reset();
+      return false;
+    }
+  </script>
+</body>
+</html>

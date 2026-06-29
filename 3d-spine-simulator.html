@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Spine Simulator | Curry Chiropractic — Windsor, CT</title>
+  <meta name="description" content="Explore the interactive 3D Spine Simulator from Curry Chiropractic in Windsor, CT. Click each vertebra to learn how the spine and nervous system connect to your overall health." />
+  <meta name="theme-color" content="#000000" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="pages.css" />
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span class="topbar__item">📍 15 Central Street, Windsor, CT 06095</span>
+      <span class="topbar__sep">•</span>
+      <a class="topbar__item" href="tel:+18606881218">📞 (860) 688-1218</a>
+      <span class="topbar__hours">Understand your spine</span>
+    </div>
+  </div>
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__brand" aria-label="Curry Chiropractic home">
+        <img src="assets/logo.png" alt="Curry Chiropractic logo" class="nav__logo" />
+        <span class="nav__brand-text">Curry<strong>Chiropractic</strong></span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="services-techniques.html">Services</a>
+        <a href="new-patient-center.html">New Patients</a>
+        <a href="events.html">Events</a>
+        <a href="curry-classic.html">Curry Classic</a>
+        <a href="index.html#reviews">Reviews</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="tel:+18606881218" class="btn btn--primary nav__cta">Call Now</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="pagehero">
+    <div class="container pagehero__inner">
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span>3D Spine Simulator</div>
+      <h1>3D Spine Simulator</h1>
+      <p>Your spine protects the nervous system that controls your whole body. Explore the interactive simulator below — click any region or vertebra to see how it connects to your health.</p>
+      <div class="pagehero__bar"></div>
+    </div>
+  </section>
+
+  <section class="pagebody">
+    <div class="container">
+      <div class="embed-frame reveal">
+        <iframe
+          title="Interactive 3D Spine Simulator"
+          src="https://currychiroct.com/content/chiromatrix/3d_spine/nerve_chart/index.htm"
+          loading="lazy" allowfullscreen></iframe>
+      </div>
+      <p class="embed-note reveal">
+        Trouble viewing the simulator?
+        <a href="https://currychiroct.com/content/chiromatrix/3d_spine/nerve_chart/index.htm" target="_blank" rel="noopener"><strong>Open it in a new tab →</strong></a>
+      </p>
+
+      <div class="benefit-band reveal" style="margin-top:36px">
+        <span class="benefit-band__icon">🦴</span>
+        <div>
+          <h3>Curious what your spine is telling you?</h3>
+          <p>Schedule an evaluation and we'll show you exactly what's going on. Call <a href="tel:+18606881218"><strong>(860) 688-1218</strong></a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="assets/logo.png" alt="Curry Chiropractic" class="footer__logo" />
+        <p>Family-owned chiropractic care for the Windsor, CT community. Chiropractic care for everyone.</p>
+      </div>
+      <div class="footer__links">
+        <a href="services-techniques.html">Services &amp; Techniques</a>
+        <a href="new-patient-center.html">New Patients</a>
+        <a href="forms.html">Online Forms</a>
+        <a href="payment-options.html">Payment Options</a>
+        <a href="https://simplecheckout.authorize.net/payment/CatalogPayment.aspx" target="_blank" rel="noopener">Pay My Bill</a>
+        <a href="health-resources.html">Health Resources</a>
+        <a href="3d-spine-simulator.html">3D Spine Simulator</a>
+        <a href="community-content.html">Community Content</a>
+        <a href="events.html">Events</a>
+        <a href="curry-classic.html">Curry Classic</a>
+        <a href="index.html#reviews">Reviews</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> Curry Chiropractic · 15 Central Street, Windsor, CT 06095</span>
+      <span><a href="tel:+18606881218">(860) 688-1218</a></span>
+    </div>
+  </footer>
+
+  <a href="tel:+18606881218" class="float-call" aria-label="Call Curry Chiropractic">📞</a>
+  <script src="script.js"></script>
+</body>
+</html>
